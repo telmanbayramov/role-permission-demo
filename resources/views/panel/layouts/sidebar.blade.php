@@ -10,9 +10,9 @@
   $PermissionSetting=App\Models\PermissionRoleModel::getPermission('Setting',Auth::user()->role_id);
 @endphp
   <li class="nav-item">
-    <a class="nav-link @if(Request::segment(2)!='dashboard')collapsed @endif" href="{{url('panel/dashboard')}}">
+    <a class="nav-link @if(Request::segment(2)!='dashboard')collapsed @endif" href="{{url('panel/seats')}}">
       <i class="bi bi-grid"></i>
-      <span>Dashboard</span>
+      <span>Masalar</span>
     </a>
 </li>
 @if(!@empty($PermissionUser))
